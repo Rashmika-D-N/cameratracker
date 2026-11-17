@@ -1,0 +1,77 @@
+{
+  "selection": {
+    "best_epoch": 15,
+    "validation_loss": 0.007976579624313546,
+    "persistence_validation_loss": 0.005432566264385674,
+    "threshold": 0.06443268060684204,
+    "persistence_threshold": 0.07846628129482269,
+    "threshold_rule": "99th percentile of covered normal validation scene scores; strict greater-than alert",
+    "training_seconds": 25.993750399999954,
+    "parameters": 4642,
+    "fitting_windows": 55548,
+    "validation_windows": 9955,
+    "checkpoint_sha256": "5f7d9cef2080e45d040393f0a9b4a6d7d77d5a128f82c790bee847b6a6a012cd",
+    "official_labels_used_for_selection": false
+  },
+  "test": {
+    "total_frames": 4846,
+    "scored_frames": 2867,
+    "coverage": 0.5916219562525794,
+    "positive_frames": 1534,
+    "covered_positive_frames": 1241,
+    "covered_negative_frames": 1626,
+    "uncovered_positive_frames": 293,
+    "covered_frame_confusion": {
+      "tp": 19,
+      "fp": 33,
+      "fn": 1222,
+      "tn": 1593
+    },
+    "precision_on_scored_frames": 0.36538461538461536,
+    "recall_on_scored_positives": 0.015310233682514102,
+    "operational_recall_if_abstentions_emit_no_alert": 0.012385919165580182,
+    "covered_normal_frame_exceedance_rate": 0.02029520295202952,
+    "overall_positive_prevalence": 0.3165497317375155,
+    "roc_auc": 0.5494943668211862,
+    "average_precision": 0.4499540414998099
+  },
+  "persistence_comparator": {
+    "total_frames": 4846,
+    "scored_frames": 2867,
+    "coverage": 0.5916219562525794,
+    "positive_frames": 1534,
+    "covered_positive_frames": 1241,
+    "covered_negative_frames": 1626,
+    "uncovered_positive_frames": 293,
+    "covered_frame_confusion": {
+      "tp": 11,
+      "fp": 24,
+      "fn": 1230,
+      "tn": 1602
+    },
+    "precision_on_scored_frames": 0.3142857142857143,
+    "recall_on_scored_positives": 0.008863819500402902,
+    "operational_recall_if_abstentions_emit_no_alert": 0.007170795306388526,
+    "covered_normal_frame_exceedance_rate": 0.014760147601476014,
+    "overall_positive_prevalence": 0.3165497317375155,
+    "roc_auc": 0.48751007252215955,
+    "average_precision": 0.4124717330557282
+  },
+  "eligible_test_windows": 3347,
+  "cpu_model_only_batch1_ms": {
+    "median": 0.12384999945425079,
+    "p95": 0.2816100005475164,
+    "threads": 2,
+    "warmup": 50,
+    "iterations": 300
+  },
+  "limits": [
+    "Pose prediction anomaly scores are not concealment labels or theft probabilities.",
+    "No continuous-video event precision, false alerts per hour, or source FPS claim is supported.",
+    "Metrics are conditional on scored frames; overall recall treats abstention as no alert.",
+    "Scene labels cannot identify which person acted; no per-person classification accuracy is claimed.",
+    "Producer interpolation/smoothing causality, joint semantics, and actor/session independence remain unverified.",
+    "No YOLO/video extractor or low-spec shop hardware was evaluated."
+  ],
+  "status": "experimental; insufficient for detection; no YOLO fine-tuning"
+}

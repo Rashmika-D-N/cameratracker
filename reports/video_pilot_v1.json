@@ -1,0 +1,280 @@
+{
+  "extraction": {
+    "model": "yolo11n-pose.pt",
+    "weight_sha256": "869e83fcdffdc7371fa4e34cd8e51c838cc729571d1635e5141e3075e9319dc0",
+    "ultralytics": "8.4.210",
+    "device": "cpu",
+    "threads": 2,
+    "clips": [
+      {
+        "clip": "normal_001",
+        "provider_label": "normal",
+        "source_sha256": "f95ec881ae902c91595b25000745f159bb47b77adcf03aa4bc67f485771248af",
+        "source_fps": 30.0,
+        "decoded_frames": 318,
+        "sampled_frames": 106,
+        "frames_with_pose": 0,
+        "frames_with_track": 0,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 109.58665188678972
+      },
+      {
+        "clip": "normal_031",
+        "provider_label": "normal",
+        "source_sha256": "6f1065551a84cb11666942501d3d3ea3a0a11a3fe4d7a85fa23e6bacfbd0c4f2",
+        "source_fps": 30.0,
+        "decoded_frames": 361,
+        "sampled_frames": 121,
+        "frames_with_pose": 121,
+        "frames_with_track": 121,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 95.03280991728478
+      },
+      {
+        "clip": "normal_061",
+        "provider_label": "normal",
+        "source_sha256": "3fd4565b6051828097911d1777250e06020afdaeba10e8abffd31823cce3a05c",
+        "source_fps": 30.0,
+        "decoded_frames": 336,
+        "sampled_frames": 112,
+        "frames_with_pose": 112,
+        "frames_with_track": 112,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 94.8136187499488
+      },
+      {
+        "clip": "normal_090",
+        "provider_label": "normal",
+        "source_sha256": "823badbf0c5b85ff202b9c2fefd63af11443e71e83c52d132376f6970320fabb",
+        "source_fps": 30.0,
+        "decoded_frames": 620,
+        "sampled_frames": 207,
+        "frames_with_pose": 207,
+        "frames_with_track": 207,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 83.09421449288985
+      },
+      {
+        "clip": "shoplifting_001",
+        "provider_label": "shoplifting",
+        "source_sha256": "267d5ae4976a52e46675225cd860c5442697a98cdfb01c266a1460442ee62a15",
+        "source_fps": 30.0,
+        "decoded_frames": 311,
+        "sampled_frames": 104,
+        "frames_with_pose": 104,
+        "frames_with_track": 104,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 92.22099807696465
+      },
+      {
+        "clip": "shoplifting_031",
+        "provider_label": "shoplifting",
+        "source_sha256": "060850d3c14487459f93c1e11b1cebebc016aadaa0c6577512fb65fcaca73533",
+        "source_fps": 30.0,
+        "decoded_frames": 316,
+        "sampled_frames": 106,
+        "frames_with_pose": 95,
+        "frames_with_track": 95,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 90.34246415101836
+      },
+      {
+        "clip": "shoplifting_063",
+        "provider_label": "shoplifting",
+        "source_sha256": "d73c558006819bedba4fbbed80efde94301b522669401d553501ee560c9f636c",
+        "source_fps": 30.0,
+        "decoded_frames": 323,
+        "sampled_frames": 108,
+        "frames_with_pose": 108,
+        "frames_with_track": 108,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 90.03034814824989
+      },
+      {
+        "clip": "shoplifting_093",
+        "provider_label": "shoplifting",
+        "source_sha256": "5b2ca63800fec73b10f31c78bb7413fca8332850cbc9e83287aa06e368aa6527",
+        "source_fps": 30.0,
+        "decoded_frames": 340,
+        "sampled_frames": 114,
+        "frames_with_pose": 114,
+        "frames_with_track": 114,
+        "sample_fps": 10.0,
+        "imgsz": 416,
+        "model_and_tracker_mean_ms": 51.88861403524227
+      }
+    ],
+    "limits": [
+      "Provider clip labels only; action boundaries and phone/clothing labels unverified.",
+      "Extraction and tracking timings are laptop measurements, not low-spec certification.",
+      "Timestamp mapping assumes source constant frame rate; not proof of encoded PTS accuracy.",
+      "No trained classifier or person-level ground truth is created by pose extraction."
+    ]
+  },
+  "context_availability": {
+    "clips": [
+      {
+        "clip": "normal_001",
+        "samples": 106,
+        "tracks": 0,
+        "observations_with_complete_proxy_joints": 0,
+        "eligible_context_windows_seconds": {
+          "0.8": 0,
+          "2.4": 0,
+          "4.8": 0
+        },
+        "proxy_medians": {}
+      },
+      {
+        "clip": "normal_031",
+        "samples": 121,
+        "tracks": 1,
+        "observations_with_complete_proxy_joints": 121,
+        "eligible_context_windows_seconds": {
+          "0.8": 113,
+          "2.4": 97,
+          "4.8": 73
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.6664306267595428,
+          "left_wrist_to_shoulder": 0.694827284411277,
+          "right_wrist_to_hip": 0.6175990088578347,
+          "right_wrist_to_shoulder": 0.7000502501692853,
+          "wrist_speed_per_torso_per_second": 0.5255010085529646,
+          "wrists_apart": 0.09616019292304116
+        }
+      },
+      {
+        "clip": "normal_061",
+        "samples": 112,
+        "tracks": 5,
+        "observations_with_complete_proxy_joints": 162,
+        "eligible_context_windows_seconds": {
+          "0.8": 129,
+          "2.4": 98,
+          "4.8": 64
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.736026912962348,
+          "left_wrist_to_shoulder": 0.667799552276992,
+          "right_wrist_to_hip": 0.5244480011072092,
+          "right_wrist_to_shoulder": 0.7064885604603011,
+          "wrist_speed_per_torso_per_second": 0.3009505521459685,
+          "wrists_apart": 0.3445460871131413
+        }
+      },
+      {
+        "clip": "normal_090",
+        "samples": 207,
+        "tracks": 1,
+        "observations_with_complete_proxy_joints": 207,
+        "eligible_context_windows_seconds": {
+          "0.8": 199,
+          "2.4": 183,
+          "4.8": 159
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.6443753251192663,
+          "left_wrist_to_shoulder": 0.858566715815067,
+          "right_wrist_to_hip": 0.38170277888332893,
+          "right_wrist_to_shoulder": 0.6817236464065557,
+          "wrist_speed_per_torso_per_second": 0.3620973007679525,
+          "wrists_apart": 0.4071526174024661
+        }
+      },
+      {
+        "clip": "shoplifting_001",
+        "samples": 104,
+        "tracks": 2,
+        "observations_with_complete_proxy_joints": 208,
+        "eligible_context_windows_seconds": {
+          "0.8": 192,
+          "2.4": 160,
+          "4.8": 112
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.7027971962349524,
+          "left_wrist_to_shoulder": 0.4790526365805138,
+          "right_wrist_to_hip": 0.6784109640335556,
+          "right_wrist_to_shoulder": 0.46155531584009646,
+          "wrist_speed_per_torso_per_second": 0.15630353937593108,
+          "wrists_apart": 0.03872994652625664
+        }
+      },
+      {
+        "clip": "shoplifting_031",
+        "samples": 106,
+        "tracks": 1,
+        "observations_with_complete_proxy_joints": 95,
+        "eligible_context_windows_seconds": {
+          "0.8": 86,
+          "2.4": 71,
+          "4.8": 47
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.48952925261395375,
+          "left_wrist_to_shoulder": 0.8762764220534153,
+          "right_wrist_to_hip": 0.3540388575311455,
+          "right_wrist_to_shoulder": 0.8050497175905996,
+          "wrist_speed_per_torso_per_second": 0.5370553082354491,
+          "wrists_apart": 0.18548840684956136
+        }
+      },
+      {
+        "clip": "shoplifting_063",
+        "samples": 108,
+        "tracks": 1,
+        "observations_with_complete_proxy_joints": 108,
+        "eligible_context_windows_seconds": {
+          "0.8": 100,
+          "2.4": 84,
+          "4.8": 60
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.89916860888329,
+          "left_wrist_to_shoulder": 1.0716950121185562,
+          "right_wrist_to_hip": 0.3424306959930785,
+          "right_wrist_to_shoulder": 0.7384428712650564,
+          "wrist_speed_per_torso_per_second": 0.6106574553718312,
+          "wrists_apart": 0.9709694579433152
+        }
+      },
+      {
+        "clip": "shoplifting_093",
+        "samples": 114,
+        "tracks": 1,
+        "observations_with_complete_proxy_joints": 114,
+        "eligible_context_windows_seconds": {
+          "0.8": 106,
+          "2.4": 90,
+          "4.8": 66
+        },
+        "proxy_medians": {
+          "left_wrist_to_hip": 0.675393918615727,
+          "left_wrist_to_shoulder": 0.6954991122062331,
+          "right_wrist_to_hip": 0.4733905033056335,
+          "right_wrist_to_shoulder": 0.6260771193126242,
+          "wrist_speed_per_torso_per_second": 0.7718120452127719,
+          "wrists_apart": 0.5608508450576564
+        }
+      }
+    ],
+    "status": "feature/context availability pilot only",
+    "labels": "Provider normal/shoplifting labels; not reviewed four-action labels",
+    "accuracy_comparison_performed": false,
+    "limits": [
+      "Wrist-to-body distances are proxies; no bag/product detector or real hand-object interaction ground truth was used.",
+      "Longer windows trade coverage for context; this report does not show better concealment detection.",
+      "No splits or accuracy are invented from eight provider-labeled clips."
+    ]
+  },
+  "four_action_validation_complete": false,
+  "classifier_efficacy_compared": false
+}

@@ -1,0 +1,44 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend output and local tooling
+node_modules/
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
+
+# Sensitive/runtime/large artifacts: keep directory structure in docs instead
+data/
+runtime/
+datasets/
+artifacts/
+work/
+graphify-out/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.log

@@ -1,0 +1,8 @@
+-c requirements-cpu.lock.txt
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cpu
+ultralytics==8.4.210
+torchvision==0.24.1+cpu
+opencv-python==4.12.0.88
+scipy==1.15.3
+lap==0.5.12
